@@ -1,0 +1,27 @@
+hello my name is
+one of the song
+public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        ImplimentationAllClassMethod ic=new ImplimentationAllClassMethod();
+        int ch= sc.nextInt();
+        if (ch==1) {
+            String a[] = ic.getdatasong(1);
+        }
+        // p-play, n-next
+            //filePath = "A:\\songs\\Dheere-Dheere-Dheere.wav";
+
+        PlayMusic audioPlayer = new PlayMusic();
+        audioPlayer.play();
+        while (true)
+        {
+            System.out.println("1. pause");
+            System.out.println("2. resume");
+            System.out.println("3. stop");
+            int c = sc.nextInt();
+            audioPlayer.gotoChoice(c);
+            if (c == 3)
+                break;
+        }
+
+    }
